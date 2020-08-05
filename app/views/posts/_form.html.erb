@@ -1,0 +1,7 @@
+<div class="section">
+	<%= bulma_form_with(model: @post, local: true) do |f| %>
+	  <%= f.text_field :title , wrapper: false%>
+	   <%= f.text_area :content, wrapper: false %>
+	 	<%= f.submit 'submit', class: "button is-primary"%>
+	<% end %>
+</div>
